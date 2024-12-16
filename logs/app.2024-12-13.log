@@ -1,0 +1,72 @@
+2024-12-13 00:05:43 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-12-13 00:05:43 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2024-12-13 00:05:43 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-13 00:05:43 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2024-12-13 00:05:43 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2024-12-13 00:05:43 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+2024-12-13 00:05:43 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 00:05:43 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 00:05:43 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-13 22:41:30 [restartedMain] INFO  org.example.cafe.SiteApplication - Starting SiteApplication using Java 17.0.5 with PID 8388 (D:\Progs\JavaProjects\kursovik\target\classes started by andre in D:\Progs\JavaProjects\kursovik)
+2024-12-13 22:41:30 [restartedMain] INFO  org.example.cafe.SiteApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-13 22:41:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-13 22:41:30 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-13 22:41:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-13 22:41:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 6 JPA repository interfaces.
+2024-12-13 22:41:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2024-12-13 22:41:32 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2024-12-13 22:41:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-13 22:41:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.8]
+2024-12-13 22:41:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-13 22:41:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1220 ms
+2024-12-13 22:41:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-13 22:41:32 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@44f01a81
+2024-12-13 22:41:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-13 22:41:32 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-13 22:41:32 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.2.Final
+2024-12-13 22:41:32 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2024-12-13 22:41:33 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-12-13 22:41:33 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-13 22:41:33 [restartedMain] INFO  org.hibernate.orm.dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.0.39
+2024-12-13 22:41:33 [restartedMain] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2024-12-13 22:41:33 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-13 22:41:34 [restartedMain] DEBUG org.hibernate.SQL - alter table inventory modify column priceall  float(53) not null
+2024-12-13 22:41:34 [restartedMain] DEBUG org.hibernate.SQL - alter table notification modify column created_at  datetime(6)
+2024-12-13 22:41:34 [restartedMain] DEBUG org.hibernate.SQL - alter table product modify column price  float(53)
+2024-12-13 22:41:34 [restartedMain] DEBUG org.hibernate.SQL - alter table supplies modify column creation_date  datetime(6)
+2024-12-13 22:41:34 [restartedMain] DEBUG org.hibernate.SQL - alter table supplies modify column delivery_date  datetime(6)
+2024-12-13 22:41:34 [restartedMain] DEBUG org.hibernate.SQL - alter table supplies modify column status  enum ('CANCELED','DELIVERED','PENDING')
+2024-12-13 22:41:34 [restartedMain] DEBUG org.hibernate.SQL - alter table supplies modify column total_price  float(53)
+2024-12-13 22:41:34 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 22:41:34 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-13 22:41:35 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-13 22:41:35 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2024-12-13 22:41:35 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2024-12-13 22:41:35 [restartedMain] INFO  org.example.cafe.SiteApplication - Started SiteApplication in 4.634 seconds (process running for 5.107)
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select s1_0.id,s1_0.creation_date,s1_0.delivery_date,s1_0.expiration_date,s1_0.product_id,s1_0.quantity,s1_0.status,s1_0.supplier_id,s1_0.total_price from supplies s1_0
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.amount,p1_0.name,p1_0.price from product p1_0 where p1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select s1_0.id,s1_0.contact_info,s1_0.name from supplier s1_0 where s1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select s1_0.id,s1_0.contact_info,s1_0.name from supplier s1_0 where s1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.amount,p1_0.name,p1_0.price from product p1_0 where p1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select s1_0.id,s1_0.contact_info,s1_0.name from supplier s1_0 where s1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.amount,p1_0.name,p1_0.price from product p1_0 where p1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select i1_0.id,i1_0.expiration_date,i1_0.priceall,i1_0.product_id,i1_0.quantity,i1_0.supplier_id from inventory i1_0
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.amount,p1_0.name,p1_0.price from product p1_0 where p1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select s1_0.id,s1_0.contact_info,s1_0.name from supplier s1_0 where s1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select s1_0.id,s1_0.contact_info,s1_0.name from supplier s1_0 where s1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.amount,p1_0.name,p1_0.price from product p1_0 where p1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select s1_0.id,s1_0.contact_info,s1_0.name from supplier s1_0 where s1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.amount,p1_0.name,p1_0.price from product p1_0 where p1_0.id=?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.created_at,n1_0.is_resolved,n1_0.level,n1_0.message,n1_0.type from notification n1_0 where n1_0.message=? and n1_0.type=? and n1_0.level=? and not(n1_0.is_resolved) limit ?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.created_at,n1_0.is_resolved,n1_0.level,n1_0.message,n1_0.type from notification n1_0 where n1_0.message=? and n1_0.type=? and n1_0.level=? and not(n1_0.is_resolved) limit ?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.created_at,n1_0.is_resolved,n1_0.level,n1_0.message,n1_0.type from notification n1_0 where n1_0.message=? and n1_0.type=? and n1_0.level=? and not(n1_0.is_resolved) limit ?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select n1_0.id,n1_0.created_at,n1_0.is_resolved,n1_0.level,n1_0.message,n1_0.type from notification n1_0 where n1_0.message=? and n1_0.type=? and n1_0.level=? and not(n1_0.is_resolved) limit ?
+2024-12-13 22:41:35 [scheduling-1] DEBUG org.hibernate.SQL - select p1_0.id,p1_0.amount,p1_0.name,p1_0.price from product p1_0
+2024-12-13 22:41:57 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2024-12-13 22:41:57 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2024-12-13 22:41:57 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2024-12-13 22:41:57 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2024-12-13 22:41:57 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8081"]
+2024-12-13 22:41:57 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-13 22:41:57 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-13 22:41:57 [RMI TCP Connection(4)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

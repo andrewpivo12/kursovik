@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление продуктами</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Управление продуктами</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="inventory.html">Управление запасами</a></li>
+                <li><a href="suppliers.html">Управление поставщиками</a></li>
+                <li><a href="supplies.html">Управление поставками</a></li>
+                <li class="notifications-menu">
+                    <a href="#" id="notifications-link">
+                        <span class="bell-icon">&#x1F514;</span> <!-- Значок колокольчика -->
+                        Уведомления(<span id="notifications-count">0</span>)
+                    </a>
+                    <ul id="notifications-dropdown">
+                        <!-- Список уведомлений будет заполнен через JS -->
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <br>
+        <section id="add-product">
+            <h2>Добавить новый продукт</h2>
+            <button id="open-create-modal" style = "left:37.5px;">Добавить продукт</button>
+        </section>
+        <section id="products">
+            <br>
+            <h2>Продукты и их запасы</h2>
+            <table id="products-table">
+                <thead>
+                    <tr>
+                        <th>ID продукта</th>
+                        <th>Название продукта</th>
+                        <th>Количество продукта в запасе</th>
+                        <th>Цена за единицу</th>
+                        <th>Действие</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Продукты будут загружены через JavaScript -->
+                </tbody>
+            </table>
+        </section>
+        
+
+                <!-- Секция создания продуктов -->
+
+<div id="create-product-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="close-modal">&times;</span>
+        <h2 id="modal-title">Добавить продукт</h2>
+        <form id="product-form">
+            <label for="product-name">Название продукта:</label>
+            <input type="text" id="product-name" required>
+            <label for="product-amount">Количество продукта</label>
+            <input type="number" id="product-amount" step="1" min="0" required>
+            <label for="product-price">Цена:</label>
+            <input type="number" id="product-price" step="0.01" min="0" required>
+            <button type="submit">Добавить продукт</button>
+            <button type="button" id="cancel-modal">Отмена</button>
+        </form>
+    </div>
+</div>
+    </div>
+    <script src="products.js"></script>
+    <script src="common.js"></script>
+    <script src="notifications.js"></script>
+</body>
+</html>

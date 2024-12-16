@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+nav {
+    margin-bottom: 00px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+h1, h2 {
+    color: #333;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование содержимого по горизонтали */
+    justify-content: center; /* Центрирование по вертикали (если высота позволяет) */
+    background: white;
+    padding: 20px;
+    margin: 20px auto; /* Центрирование секции на странице */
+    border-radius: 8px; /* Закругленные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень */
+    max-width: 1000px; /* Максимальная ширина секции */
+}
+
+form {
+    width: 100%; /* Ширина формы */
+    max-width: 500px; /* Максимальная ширина для формы */
+}
+
+label {
+    margin-bottom: 10px;
+    font-weight: bold; /* Жирный текст для меток */
+    display: block; /* Блок для меток, чтобы они были в отдельных строках */
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+select, input[type="number"], input[type="datetime-local"] {
+    padding: 10px;
+    border: 1px solid #ccc; /* Рамка */
+    border-radius: 4px; /* Закругленные углы */
+    margin-bottom: 15px; /* Отступ между полями */
+}
+
+button {
+    background-color: #28a745; /* Зеленый цвет для кнопок */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px; /* Закругленные углы */
+    cursor: pointer; /* Указатель при наведении */
+    font-size: 16px; /* Размер шрифта */
+}
+
+button:hover {
+    background-color: #218838; /* Темнее при наведении */
+}
+button[type=submit] {
+    margin-left:210px;
+}
+table {
+    width: 100%; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем отступы между ячейками */
+    margin-top: 20px; /* Отступ сверху */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Линия между строками */
+}
+
+th {
+    background-color: #f2f2f2; /* Цвет фона заголовков */
+    font-weight: bold; /* Жирный текст для заголовков */
+}
+
+tr:hover {
+    background-color: #f5f5f5; /* Цвет при наведении на строку */
+}
+
+.actions {
+    display: flex;
+    justify-content: center; /* Центрирование кнопок в ячейках */
+}
+
+.actions button {
+    margin-left: 10px; /* Отступ между кнопками */
+    background-color: #dc3545; /* Красный цвет для кнопки отмены */
+}
+
+.actions button:hover {
+    background-color: #c82333; /* Темнее при наведении */
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.bell-icon {
+    font-size: 18px;
+}
+
+.notifications-menu {
+    cursor: pointer;
+}
+
+#notifications-dropdown {
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 300px;
+    z-index: 1000;
+}
+
+#notifications-dropdown.visible {
+    display: block;
+}
+
+#notifications-dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#notifications-dropdown li:last-child {
+    border-bottom: none;
+}
+
+#notifications-dropdown li.critical {
+    background-color: #ffe6e6;
+    color: #900;
+}
+
+#notifications-dropdown li.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+#notifications-dropdown li.info {
+    background-color: #e6f7ff;
+    color: #0056b3;
+}
+
+#notifications-dropdown li:hover {
+    background-color: #f9f9f9;
+}
+
+.close-button {
+    margin-left: 10px;
+    background-color: #ff4d4f;
+    border: none;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #d9363e;
+}
+

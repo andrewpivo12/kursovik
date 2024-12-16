@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кафе: Управление</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Кафе</h1>
+        <nav>
+            <ul>
+                <li><a href="products.html">Управление продуктами</a></li>
+                <li><a href="inventory.html">Управление запасами</a></li>
+                <li><a href="suppliers.html">Управление поставщиками</a></li>
+                <li><a href="supplies.html">Управление поставками</a></li>
+                 <!-- Уведомления -->
+                <li class="notifications-menu">
+                    <a id="notifications-link">
+                        <span class="bell-icon">&#x1F514;</span> <!-- Значок колокольчика -->
+                        Уведомления(<span id="notifications-count">0</span>)
+                    </a>
+                    <ul id="notifications-dropdown">
+                        <!-- Список уведомлений будет заполнен через JS -->
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src = "common.js"></script>
+    <script src="notifications.js"></script>
+</body>
+</html>

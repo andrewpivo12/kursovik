@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление поставками кафе</title>
+    <link rel="stylesheet" href="style.css"> <!-- Подключение CSS -->
+</head>
+<body>
+    <h1>Управление поставками кафе</h1>
+    <div class="container" style = "margin-top:60px;">
+        <nav>
+            <ul>
+                <li><a href="products.html">Управление продуктами</a></li>
+                <li><a href="inventory.html">Управление запасами</a></li>
+                <li><a href="suppliers.html">Управление поставщиками</a></li>
+                 <!-- Уведомления -->
+                <li class="notifications-menu">
+                    <a id="notifications-link">
+                        <span class="bell-icon">&#x1F514;</span> <!-- Значок колокольчика -->
+                    Уведомления (<span id="notifications-count">0</span>)
+                    </a>
+                    <ul style="right : -320px;" id="notifications-dropdown">
+                        <!-- Список уведомлений будет заполнен через JS -->
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- Форма для создания поставки -->
+    <br>
+    <section>
+        <h2>Создать поставку</h2>
+        <!-- Кнопка для открытия модального окна создания поставки -->
+        <button id="open-create-modal">Добавить поставку</button>
+    </section>
+    <!-- Список поставок -->
+    <section>
+        <h2>Текущие поставки</h2>
+        <table id="suppliesTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Продукт</th>
+                    <th>Поставщик</th>
+                    <th>Количество</th>
+                    <th>Дата создания</th>
+                    <th>Дата доставки</th>
+                    <th>Статус</th>
+                    <th>Общая стоимость</th>
+                    <th>Действия</th> <!-- Новый столбец для действий -->
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+        <div id="pagination" style="margin-top: 20px; text-align: center;"></div>
+    </section>
+    
+
+    
+    
+    <!-- Модальное окно для создания поставки -->
+    <div id="create-supply-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-create-modal" class="close">&times;</span>
+            <h2>Создать поставку</h2>
+            <form id="modalSupplyForm">
+                <label>Выберите продукт:
+                    <select id="modalProductId"></select>
+                </label>
+                <label>Выберите поставщика:
+                    <select id="modalSupplierId"></select>
+                </label>
+                <label>Количество:
+                    <input type="number" id="modalQuantity" required>
+                </label>
+                <label>Дата доставки:
+                    <input type="datetime-local" id="modalDeliveryDate" required>
+                </label>
+                <label>Срок годности продукта:
+                    <input type="date" id="modalExpirationDate" required>
+                </label>
+                <button type="submit">Добавить</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="supplies.js"></script> <!-- Подключение JS -->
+    <script src="common.js"></script>
+    <script src="notifications.js"></script>
+</body>
+</html>

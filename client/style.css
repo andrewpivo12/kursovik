@@ -1,0 +1,410 @@
+/* ОБЩИЕ СТИЛИ */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 125vh;
+    background-color: #f7ede2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Стили навигационного меню */
+nav {
+    display: flex;
+    justify-content: center;
+}
+ 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+    top:15px;
+}
+
+/* Стили кнопок */
+nav ul li a {
+    text-decoration: none;
+    padding: 20px 40px;
+    
+    background-color: #f5cac3;
+    color: #545454;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid transparent; /* Рамка прозрачная по умолчанию */
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+/* Анимация при наведении */
+nav ul li a:hover {
+    background-color: #ffd3cd; /* Увеличение кнопки */
+    border-color: #333; /* Появляется рамка */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Изображение для кнопок */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+button#add-supplier-button{
+    position:relative;
+    background-color:#ffd3cd;
+    color:Black;
+    top: 15px;
+    transition: 0.3s ease;
+    left: 100px;}
+    button#add-supplier-button:hover{
+        position:relative;
+        background-color:#e4beb9;
+        color:Black;
+        top: 15px;}
+        button#open-create-modal{
+            position:relative;
+            background-color:#ffd3cd;
+            color:Black;
+            top: 15px;
+            transition: 0.3s ease;
+            left: 0px;}
+            button#open-create-modal:hover{
+                position:relative;
+                background-color:#e4beb9;
+                color:Black;
+                top: 15px;}
+        
+/* ТАБЛИЦА */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table thead th {
+    background-color: #ebe2d8;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    font-size: 16px;
+}
+
+table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+table button {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+table button:hover {
+    background-color: #0056b3;
+}
+
+table button:disabled {
+    background-color: #cccccc;
+    border-color: #cccccc;
+    cursor: not-allowed;
+    color: #666;
+}
+
+/* ФОРМЫ */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #f2e7dc;
+    padding: 20px;
+    border: 1px solid #e3d9cf;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form input, form select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-self: flex-start;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* СООБЩЕНИЯ И УВЕДОМЛЕНИЯ */
+.alert {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f8d7da; /* Красный фон для ошибок */
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #d4edda; /* Зеленый фон для успеха */
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* СЕКЦИИ */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ddd;
+    font-size: 18px;
+    color: #555;
+}
+
+/* КНОПКИ В СЕКЦИЯХ */
+section button {
+    padding: 8px 15px;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+section button:hover {
+    background-color: #218838;
+}
+
+/* Модальное окно - скрыто по умолчанию */
+.modal {
+    display: none; /* Скрыто */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный черный фон */
+}
+
+/* Контент модального окна */
+.modal-content {
+    background-color: #f7ede2;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Закрывающая кнопка */
+.modal-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.modal-content .close:hover {
+    color: #ff0000;
+}
+
+/* Кнопки внутри модального окна */
+.modal-content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.modal-content button:first-child {
+    background-color: #28a745;
+    color: white;
+}
+
+.modal-content button:first-child:hover {
+    background-color: #218838;
+}
+
+.modal-content button:last-child {
+    background-color: #dc3545;
+    color: white;
+}
+
+.modal-content button:last-child:hover {
+    background-color: #c82333;
+}
+.bell-icon {
+    font-size: 18px;
+}
+
+.notifications-menu {
+    cursor: pointer;
+}
+.notifications-menu a{
+    font-size:15px;
+    display:block;
+}
+
+#notifications-dropdown {
+    display: none;
+    position: absolute;
+    top: -200px;
+    right: -235px;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 300px;
+    height:75px;
+    z-index: 1000;
+}
+
+#notifications-dropdown.visible {
+    display: block;
+}
+
+#notifications-dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#notifications-dropdown li:last-child {
+    border-bottom: none;
+}
+
+#notifications-dropdown li.critical {
+    background-color: #ffe6e6;
+    color: #900;
+}
+
+#notifications-dropdown li.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+#notifications-dropdown li.info {
+    background-color: #e6f7ff;
+    color: #0056b3;
+}
+
+#notifications-dropdown li:hover {
+    background-color: #f9f9f9;
+}
+
+.close-button {
+    margin-left: 10px;
+    background-color: #ff4d4f;
+    border: none;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #d9363e;
+}
+.out-of-stock {
+    color: red;
+    font-weight: bold;
+}
+/* Пагинация */
+#pagination button {
+    color: #333;
+    background: #eaeaea;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#pagination button.active {
+    background: #4caf50;
+    color: white;
+}
+
+#pagination button:hover {
+    background: #ddd;
+}

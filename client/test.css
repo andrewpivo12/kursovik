@@ -1,0 +1,189 @@
+/* Общие стили для страницы */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: #f7ede2;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Стили навигационного меню */
+nav {
+    display: flex;
+    justify-content: center;
+}
+ 
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+/* Стили кнопок */
+nav ul li a {
+    text-decoration: none;
+    padding: 20px 40px;
+    
+    background-color: #f5cac3;
+    color: #545454;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid transparent; /* Рамка прозрачная по умолчанию */
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+}
+
+/* Анимация при наведении */
+nav ul li a:hover {
+    background-color: #ffd3cd;
+    transform: scale(1.1); /* Увеличение кнопки */
+    height: 140px; /* Увеличиваем высоту */
+    border-color: #333; /* Появляется рамка */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Изображение для кнопок */
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul li:nth-child(1) a::before {
+    background-image: url('https:36x/19/58/ea/1958ea5b1fb77a7c0ba15730057899b1.jpg'); /* Связанный с продуктами */
+}
+
+nav ul li:nth-child(2) a::before {
+    background-image: url('httpsrks-92co11nQXkgMrkIl-SpoGDA-t1080x1080.jpg'); /* Связанный с запасами */
+}
+
+nav ul li:nth-child(3) a::before {
+    background-image: url('work.jpg/1200x1200bb.jpg'); /* Связанный с поставщиками */
+}
+
+nav ul li:nth-child(4) a::before {
+    background-image: url('htgMaw/maxresdefault.jpg'); /* Связанный с поставками */
+}
+
+/* Картинка появляется при наведении */
+nav ul li a:hover::before {
+    opacity: 0.2;
+}
+/* Текст всегда четкий */
+nav ul li a span {
+    position: relative; /* Для отображения текста поверх фона */
+    z-index: 1;
+}
+
+/* Стили для кнопки уведомлений */
+.notifications-menu {
+    cursor: pointer;
+    position:absolute;
+    top: 10px;
+    right:10px;
+    padding:10px;
+}
+#notifications-link{
+    width: 125px;
+    height: 75px;
+    font-size:14px;
+    padding: 10px 10px;
+}
+#notifications-count{
+    font-size:12;
+}
+#notifications-dropdown {
+    display: none;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 300px;
+    z-index: 1000;
+}
+
+#notifications-dropdown.visible {
+    display: block;
+}
+
+#notifications-dropdown li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#notifications-dropdown li:last-child {
+    border-bottom: none;
+}
+
+#notifications-dropdown li.critical {
+    background-color: #ffe6e6;
+    color: #900;
+}
+
+#notifications-dropdown li.warning {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+#notifications-dropdown li.info {
+    background-color: #e6f7ff;
+    color: #0056b3;
+}
+
+#notifications-dropdown li:hover {
+    background-color: #f9f9f9;
+}
+
+.close-button {
+    margin-left: 10px;
+    background-color: #ff4d4f;
+    border: none;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #d9363e;
+}
